@@ -1,0 +1,127 @@
+// 1. COLOR
+$color-white: #ffffff !default;
+$color-black: #000000 !default;
+$color-text-dark: #0a0d35 !default;
+$color-green-dark: #004fb9 !default;
+$color-text: #000000 !default;
+$color-text-blue: #0a7634 !default;
+$color-main-1: #0a7634 !default;
+$color-main-2: #27ae60 !default;
+$color-border: #e0e0e0 !default;
+$color-grey: #c4c4c4 !default;
+
+// 3 FONT FAMILY
+$header-font-family: Roboto, sans-serif !default;
+$body-font-family: Roboto, sans-serif !default;
+
+// 4 FONT SIZE
+$base-font-size: 1.4rem !default;
+
+// $h1-font-size: 2.074rem !default;
+// $h2-font-size: 1.728rem !default;
+// $h3-font-size: 1.44rem !default;
+// $h4-font-size: 1.2rem !default;
+// $h5-font-size: 1rem !default;
+// $h6-font-color: $oc-gray-7 !default;
+
+$header-font-weight: bold !default;
+$small-base-font-size: 16px !default;
+$small-h1-font-size: 2.074rem !default;
+$small-h2-font-size: 1.728rem !default;
+$small-h3-font-size: 1.44rem !default;
+$small-h4-font-size: 1.2rem !default;
+$small-h5-font-size: 1rem !default;
+
+//links
+a {
+  color: $color-black;
+  text-decoration: none;
+}
+a:hover {
+  color: hoverText($color-black, 0.25);
+}
+//a:visited { color: $purple; }
+//a:active { color: $red; }
+
+// MIXIN
+
+@mixin hoverText($color, $transition: 0.25s) {
+  color: $color;
+  transition: $transition;
+}
+
+@mixin text-ellipsis() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin ellipsis-text($display: flex) {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font($size, $lineHeight) {
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+// $XS: 575.98px;
+// $SM: 767.98px;
+// $MD: 991.98px;
+// $XL: 1199.98px;
+
+// media queries
+
+// @mixin Responsive($canvas) {
+//   @if $canvas == XS {
+//     @media (min-width: $XS) {
+//       @content;
+//     }
+//   } @else if $canvas == SM {
+//     @media (min-width: $SM) {
+//       @content;
+//     }
+//   } @else if $canvas == MD {
+//     @media (min-width: $MD) {
+//       @content;
+//     }
+//   } @else if $canvas == XL {
+//     @media (min-width: $XL) {
+//       @content;
+//     }
+//   }
+// }
+
+@mixin flex(
+  $display: flex,
+  $flex-direction: row,
+  $justify-content: center,
+  $align-item: center
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
+
+@mixin flex-center($display: flex) {
+  display: $display;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@mixin transition($properties, $duration: 0.3s, $delay: 0s) {
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-property: $properties;
+  transition-duration: $duration;
+  transition-delay: $delay;
+}
