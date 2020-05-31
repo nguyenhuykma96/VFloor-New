@@ -221,7 +221,7 @@ img {
 
 .recommend {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1;
   grid-column-gap: 2px;
   &__item {
@@ -259,7 +259,7 @@ img {
   }
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
   }
   .product-title {
@@ -316,5 +316,36 @@ img {
     border: 2px solid #ffffff;
     padding: 6px;
     height: 74px;
+  }
+}
+.news {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 57px;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    &-txt {
+      @include font(18px, 21px);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+  }
+  &__date {
+    display: inline-block;
+    @include font(12px, 14px);
+    text-transform: uppercase;
+    color: $color-grey;
+    margin-bottom: 10px;
+    margin-top: 22px;
+  }
+  &__des {
+    margin-bottom: 18px;
   }
 }

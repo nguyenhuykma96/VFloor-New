@@ -266,7 +266,7 @@ img {
 
 .recommend {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1;
   grid-column-gap: 2px;
 }
@@ -297,7 +297,7 @@ img {
 
 .product__content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
 }
 .product .product-title {
@@ -359,6 +359,36 @@ img {
   border: 2px solid #ffffff;
   padding: 6px;
   height: 74px;
+}
+
+.news__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 57px;
+}
+.news__item {
+  margin-bottom: 20px;
+}
+.news__img {
+  width: 100%;
+}
+.news__title-txt {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.news__date {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #c4c4c4;
+  margin-bottom: 10px;
+  margin-top: 22px;
+}
+.news__des {
+  margin-bottom: 18px;
 }
 
 @media screen and (max-width: 1200px) {
