@@ -24,6 +24,16 @@ $(document).ready(function() {
     margin: 20,
     nav: true,
     items: 2,
-    navText: ["<img src='./img/prev2.png'>", "<img src='./img/next2.png'>"]
+    navText: ["<img src='./img/prev2.png'>", "<img src='./img/next2.png'>"],
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      767: {
+        items: 2,
+        nav: false
+      }
+    }
   });
 });
