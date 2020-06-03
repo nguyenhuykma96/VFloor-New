@@ -27,28 +27,88 @@
     <header>
       <div class="header">
         <div class="top-header">
-          <div class="container">
-            <div class="top-header__row">
-              <a class="top-header__link" href="#">Hệ Thống Phân Phối</a>
-              <a class="top-header__link" href="/login">Đăng Nhập</a>
-              <div class="top-header__link icon-cart">
-                <i class="fa fa-shopping-cart icon"></i>
-                <span class="cart-quantity">2</span>
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="top-header__row">
+                <a class="top-header__link" href="#">Hệ Thống Phân Phối</a>
+                <a class="top-header__link" href="/login">Đăng Nhập</a>
+                <div class="top-header__link icon-cart">
+                  <i class="fa fa-shopping-cart icon"></i>
+                  <span class="cart-quantity">2</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="main-header">
-          <div class="container">
-            <div class="main-header__wrap">
-              <div class="logo">
-                <a href="/"> <img src="./img/logo.png" alt=""/></a>
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="main-header__wrap">
+                <div class="logo">
+                  <a href="/"> <img src="./img/logo.png" alt=""/></a>
+                </div>
+                <ul class="main-header__menu">
+                  <li class="menu-item">
+                    <a href="/products" class="menu-link">Sản Phẩm</a>
+                    <ul class="sub-menu">
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Vfloor</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Vfloor Standard</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Lucky Floor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Về Havitech</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Công Nghệ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Dự Án</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Tin Tức</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Liên Hệ</a>
+                  </li>
+                </ul>
+                <div class="menu-action">
+                  <div class="search-input">
+                    <i class="fa fa-search icon" aria-hidden="true"></i>
+                  </div>
+                  <div class="top-header__link icon-cart d-lg-none">
+                    <i class="fa fa-shopping-cart icon"></i>
+                    <span class="cart-quantity">2</span>
+                  </div>
+                  <i
+                    class="fa fa-bars icon d-lg-none ml-4"
+                    aria-hidden="true"
+                  ></i>
+                </div>
               </div>
-              <ul class="main-header__menu">
-                <li class="menu-item">
-                  <a href="/products" class="menu-link">Sản Phẩm</a>
-                  <ul class="sub-menu">
+            </div>
+          </div>
+        </div>
+        <div class="container container-custom d-lg-none">
+          <div class="page-wrap">
+            <div class="menu-fullScreen">
+              <ul class="main-header__menu d-block">
+                <li class="menu-item px-0">
+                  <div class="hasSubMenu">
+                    <a href="#" data-toggle="dropdown" class="menu-link "
+                      >Sản Phẩm</a
+                    >
+                    <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
+                  </div>
+
+                  <ul class="sub-menu position-static">
                     <li class="sub-menu__item">
                       <a class="sub-menu__link" href="#">Vfloor</a>
                     </li>
@@ -60,81 +120,31 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Về Havitech</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Công Nghệ</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Dự Án</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Tin Tức</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Liên Hệ</a>
                 </li>
               </ul>
-              <div class="menu-action">
-                <div class="search-input">
-                  <i class="fa fa-search icon" aria-hidden="true"></i>
-                </div>
-                <div class="top-header__link icon-cart d-lg-none">
-                  <i class="fa fa-shopping-cart icon"></i>
-                  <span class="cart-quantity">2</span>
-                </div>
-                <i
-                  class="fa fa-bars icon d-lg-none ml-4"
-                  aria-hidden="true"
-                ></i>
-              </div>
+              <ul class="menu-fullScreen__bot">
+                <li class="menu-bot-item">
+                  <a href="#"></a>Hệ Thống Phân Phối
+                </li>
+                <li class="menu-bot-item">
+                  <a class="" href="#"></a>Đăng Nhập
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="container d-lg-none">
-          <div class="menu-fullScreen">
-            <ul class="main-header__menu d-block">
-              <li class="menu-item px-0">
-                <div class="hasSubMenu">
-                  <a href="#" data-toggle="dropdown" class="menu-link "
-                    >Sản Phẩm</a
-                  >
-                  <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
-                </div>
-
-                <ul class="sub-menu position-static">
-                  <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">Vfloor</a>
-                  </li>
-                  <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">Vfloor Standard</a>
-                  </li>
-                  <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">Lucky Floor</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Về Havitech</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Công Nghệ</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Dự Án</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Tin Tức</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Liên Hệ</a>
-              </li>
-            </ul>
-            <ul class="menu-fullScreen__bot">
-              <li class="menu-bot-item"><a href="#"></a>Hệ Thống Phân Phối</li>
-              <li class="menu-bot-item"><a class="" href="#"></a>Đăng Nhập</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -142,20 +152,22 @@
     <main>
       <section id="breadcrumd">
         <div class="breadcrumd">
-          <div class="container comtainer-custom">
-            <div class="breadcrumd__main">
-              <a href="#" class="breadcrumd__link">
-                <i class="fa fa-home" aria-hidden="true"></i>
-                Trang chủ
-              </a>
-              <span>|</span>
-              <a href="#" class="breadcrumd__link">
-                Sản Phẩm
-              </a>
-              <span>|</span>
-              <a href="#" class="breadcrumd__link">
-                SÀN SPC VFLOOR
-              </a>
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="breadcrumd__main">
+                <a href="#" class="breadcrumd__link">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  Trang chủ
+                </a>
+                <span>|</span>
+                <a href="#" class="breadcrumd__link">
+                  Sản Phẩm
+                </a>
+                <span>|</span>
+                <a href="#" class="breadcrumd__link">
+                  SÀN SPC VFLOOR
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -163,176 +175,203 @@
       <section id="products">
         <div class="products">
           <div class="container container-custom">
-            <div class="products__wrap">
-              <div class="products__head">
-                <h2 class="products__title">SÀN SPC VFLOOR</h2>
-                <div class="products__sort">
-                  <h6 class="sort-txt">Sắp xếp theo</h6>
-                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                  <ul class="products__sort-content">
-                    <li>Phổ biến nhất</li>
-                    <li>Giá tăng dần</li>
-                    <li>Giá giảm dần</li>
-                    <li>Hàng mới</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="products__content">
-                <div class="products__filter">
-                  <h3 class="products__filter__title mb-4">Bộ Lọc</h3>
-                  <div class="filter-ckb">
-                    <div class="form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input mt-0"
-                        id="exampleCheck1"
-                      />
-                      <label class="form-check-label ml-3" for="exampleCheck1">
-                        Vfloor
-                      </label>
-                    </div>
+            <div class="page-wrap">
+              <div class="products__wrap">
+                <div class="products__head">
+                  <h2 class="products__title">
+                    SÀN SPC VFLOOR
+                  </h2>
+                  <!-- filter tablet -->
+                  <div class="filter-fullScreen">
+                    <h6 class="sort-txt">BỘ LỌC</h6>
+                    <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
+                  </div>
 
-                    <div class="form-check">
-                      <input
-                        class="form-check-input mt-0"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label ml-3" for="defaultCheck1">
-                        Vfloor Standard
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input mt-0"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label ml-3" for="defaultCheck1">
-                        Lucky Floor
-                      </label>
-                    </div>
-                  </div>
-                  <div class="filter-form">
-                    <input
-                      class="filter-price"
-                      type="number"
-                      placeholder="Tìm Kiếm Theo Giá"
-                    />
-                    <button
-                      type="submit"
-                      class="newsLetter__btn search-btn mt-4"
-                    >
-                      TÌM KIẾM
-                    </button>
+                  <div class="products__sort">
+                    <h6 class="sort-txt">Sắp xếp theo</h6>
+                    <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
+                    <ul class="products__sort-content">
+                      <li class="sort-item">
+                        <a href="#" class="sort-link">Phổ biến nhất</a>
+                      </li>
+                      <li class="sort-item">
+                        <a href="#" class="sort-link">Giá tăng dần</a>
+                      </li>
+                      <li class="sort-item">
+                        <a href="#" class="sort-link">Giá giảm dần</a>
+                      </li>
+                      <li class="sort-item">
+                        <a href="#" class="sort-link">Hàng mới</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="space"></div>
-                <div class="products__list">
-                  <div class="products__items">
-                    <div class="products__item">
+                <div class="products__content">
+                  <div class="products__filter">
+                    <h3 class="products__filter__title mb-4">Bộ Lọc</h3>
+                    <div class="filter-ckb">
                       <div class="form-check">
                         <input
-                          class="form-check-input mt-0 ml-4"
                           type="checkbox"
-                          value=""
-                          id="product1"
+                          class="form-check-input mt-0"
+                          id="exampleCheck1"
                         />
-                        <label class="form-check-label" for="product1">
-                          So Sánh
+                        <label
+                          class="form-check-label ml-3"
+                          for="exampleCheck1"
+                        >
+                          Vfloor
                         </label>
                       </div>
-                      <div class="products__item-img">
-                        <img src="./img/product.png" alt="" />
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input mt-0"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label
+                          class="form-check-label ml-3"
+                          for="defaultCheck1"
+                        >
+                          Vfloor Standard
+                        </label>
                       </div>
-                      <div class="products__item-des">
-                        <h3 class="products__item-title mb-3">
-                          Pro Vfloor Spring #2424
-                        </h3>
-                        <span class="products__item-price">$80,97</span>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input mt-0"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label
+                          class="form-check-label ml-3"
+                          for="defaultCheck1"
+                        >
+                          Lucky Floor
+                        </label>
                       </div>
                     </div>
-                    <div class="products__item">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input mt-0 ml-4"
-                          type="checkbox"
-                          value=""
-                          id="product1"
-                        />
-                        <label class="form-check-label" for="product1">
-                          So Sánh
-                        </label>
-                      </div>
-                      <div class="products__item-img">
-                        <img src="./img/product.png" alt="" />
-                      </div>
-                      <div class="products__item-des">
-                        <h3 class="products__item-title mb-3">
-                          Pro Vfloor Spring #2424
-                        </h3>
-                        <span class="products__item-price">$80,97</span>
-                      </div>
-                    </div>
-                    <div class="products__item">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input mt-0 ml-4"
-                          type="checkbox"
-                          value=""
-                          id="product1"
-                        />
-                        <label class="form-check-label" for="product1">
-                          So Sánh
-                        </label>
-                      </div>
-                      <div class="products__item-img">
-                        <img src="./img/product.png" alt="" />
-                      </div>
-                      <div class="products__item-des">
-                        <h3 class="products__item-title mb-3">
-                          Pro Vfloor Spring #2424
-                        </h3>
-                        <span class="products__item-price">$80,97</span>
-                      </div>
-                    </div>
-                    <div class="products__item">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input mt-0 ml-4"
-                          type="checkbox"
-                          value=""
-                          id="product1"
-                        />
-                        <label class="form-check-label" for="product1">
-                          So Sánh
-                        </label>
-                      </div>
-                      <div class="products__item-img">
-                        <img src="./img/product.png" alt="" />
-                      </div>
-                      <div class="products__item-des">
-                        <h3 class="products__item-title mb-3">
-                          Pro Vfloor Spring #2424
-                        </h3>
-                        <span class="products__item-price">$80,97</span>
-                      </div>
+                    <div class="filter-form">
+                      <input
+                        class="filter-price"
+                        type="number"
+                        placeholder="Tìm Kiếm Theo Giá"
+                      />
+                      <button
+                        type="submit"
+                        class="newsLetter__btn search-btn mt-4"
+                      >
+                        TÌM KIẾM
+                      </button>
                     </div>
                   </div>
-                  <div class="pagination">
-                    <div class="pagination__action">
-                      <a href="#">
-                        <img src="./img/prev-page.png" alt="" />
-                      </a>
-                      <span class="current-page">01</span>
-                      <a href="#">
-                        <img src="./img/next-page.png" alt="" />
-                      </a>
+                  <div class="space"></div>
+                  <div class="products__list">
+                    <div class="products__items">
+                      <div class="products__item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input mt-0 ml-4"
+                            type="checkbox"
+                            value=""
+                            id="product1"
+                          />
+                          <label class="form-check-label" for="product1">
+                            So Sánh
+                          </label>
+                        </div>
+                        <div class="products__item-img">
+                          <img src="./img/product.png" alt="" />
+                        </div>
+                        <div class="products__item-des">
+                          <h3 class="products__item-title mb-3">
+                            Pro Vfloor Spring #2424
+                          </h3>
+                          <span class="products__item-price">$80,97</span>
+                        </div>
+                      </div>
+                      <div class="products__item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input mt-0 ml-4"
+                            type="checkbox"
+                            value=""
+                            id="product1"
+                          />
+                          <label class="form-check-label" for="product1">
+                            So Sánh
+                          </label>
+                        </div>
+                        <div class="products__item-img">
+                          <img src="./img/product.png" alt="" />
+                        </div>
+                        <div class="products__item-des">
+                          <h3 class="products__item-title mb-3">
+                            Pro Vfloor Spring #2424
+                          </h3>
+                          <span class="products__item-price">$80,97</span>
+                        </div>
+                      </div>
+                      <div class="products__item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input mt-0 ml-4"
+                            type="checkbox"
+                            value=""
+                            id="product1"
+                          />
+                          <label class="form-check-label" for="product1">
+                            So Sánh
+                          </label>
+                        </div>
+                        <div class="products__item-img">
+                          <img src="./img/product.png" alt="" />
+                        </div>
+                        <div class="products__item-des">
+                          <h3 class="products__item-title mb-3">
+                            Pro Vfloor Spring #2424
+                          </h3>
+                          <span class="products__item-price">$80,97</span>
+                        </div>
+                      </div>
+                      <div class="products__item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input mt-0 ml-4"
+                            type="checkbox"
+                            value=""
+                            id="product1"
+                          />
+                          <label class="form-check-label" for="product1">
+                            So Sánh
+                          </label>
+                        </div>
+                        <div class="products__item-img">
+                          <img src="./img/product.png" alt="" />
+                        </div>
+                        <div class="products__item-des">
+                          <h3 class="products__item-title mb-3">
+                            Pro Vfloor Spring #2424
+                          </h3>
+                          <span class="products__item-price">$80,97</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="total-page mt-2">
-                      <span>1</span><span>/</span><span>10</span>
+                    <div class="pagination">
+                      <div class="pagination__action">
+                        <a href="#">
+                          <img src="./img/prev-page.png" alt="" />
+                        </a>
+                        <span class="current-page">01</span>
+                        <a href="#">
+                          <img src="./img/next-page.png" alt="" />
+                        </a>
+                      </div>
+                      <div class="total-page mt-2">
+                        <span>1</span><span>/</span><span>10</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -341,6 +380,63 @@
           </div>
         </div>
       </section>
+
+      <div class="fullScreen-form">
+        <div class="container container-custom">
+          <div class="page-wrap">
+            <i class="fa fa-times icon icon-close py-5" aria-hidden="true"></i>
+            <div class="fullScreen__head">
+              <h3 class="products__filter__title mb-4">Bộ Lọc</h3>
+              <h6 class="delete-all text-small">Xóa tất cả <span>(0)</span></h6>
+            </div>
+            <div class="filter-ckb">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input mt-0"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label ml-3" for="exampleCheck1">
+                  Vfloor
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input mt-0"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label ml-3" for="defaultCheck1">
+                  Vfloor Standard
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input mt-0"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label ml-3" for="defaultCheck1">
+                  Lucky Floor
+                </label>
+              </div>
+            </div>
+            <div class="filter-form">
+              <input
+                class="filter-price"
+                type="number"
+                placeholder="Tìm Kiếm Theo Giá"
+              />
+              <button type="submit" class="newsLetter__btn search-btn mt-4">
+                TÌM KIẾM
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section id="line"></section>
       <section>

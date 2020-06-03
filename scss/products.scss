@@ -22,13 +22,18 @@
     @include flex(flex, row, space-between, center);
     position: relative;
     background-color: $color-bg;
+    border-radius: 5px;
     padding: 12px;
-    width: 162px;
+    width: 100%;
+    max-width: 162px;
     &-content {
       position: absolute;
-      bottom: 0;
+      top: 110%;
       left: 0;
+      right: 0;
+      background-color: $color-white;
       display: none;
+      z-index: 5;
     }
   }
   &__content {
@@ -66,6 +71,9 @@
     }
     &-img {
       margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
     }
 
     &-title {
@@ -76,11 +84,46 @@
     }
   }
 }
+.sort-item {
+  padding: 8px 12px;
+  transition: background-color 0.25s linear;
+  &:hover {
+    background-color: $color-bg;
+    transition: background-color 0.25s linear;
+  }
+}
+.sort-link {
+  @include font(12px, 19px);
+  font-weight: 300;
+}
 
+.filter-fullScreen {
+  @extend .products__sort;
+  margin-right: 24px;
+  max-width: unset;
+}
+.fullScreen {
+  &-form {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: $color-white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s linear, visibility 0.25s linear;
+  }
+  &__head {
+    @include flex(flex, row, space-between, center);
+  }
+}
 .pagination {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
   &__action {
     @include flex-center();
     a:hover {

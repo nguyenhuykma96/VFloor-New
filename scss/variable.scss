@@ -29,11 +29,12 @@ $small-h5-font-size: 1rem !default;
 a {
   color: $color-black;
   text-decoration: none;
+  transition: color 0.25s linear;
 }
 a:hover {
   color: $color-main-1;
   text-decoration: none;
-  transition: color 0.25s;
+  transition: color 0.25s linear;
 }
 //a:visited { color: $purple; }
 //a:active { color: $red; }

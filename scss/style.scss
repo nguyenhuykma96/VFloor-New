@@ -17,15 +17,28 @@ body {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
-
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: opacity 0.25s linear, visibility 0.25s linear;
+}
+.icon-close {
+  display: block;
+  text-align: right;
+}
+.text-small {
+  @include font(12px, 19px);
+  font-weight: 300;
+}
 .icon {
   font-size: 20px;
+  transition: 0.25s linear;
 }
 .rotate-180 {
   transform: rotate(180deg);
-  transition: 0.3s;
+  transition: transform 0.25s linear;
 }
 .bullet {
   @include size(25px, 9px);
@@ -123,9 +136,6 @@ img {
 .hasSubMenu {
   @include flex(flex, row, space-between, center);
   position: relative;
-  .icon {
-    transition: 0.3s;
-  }
 }
 .menu-item {
   padding: 0 28px;
