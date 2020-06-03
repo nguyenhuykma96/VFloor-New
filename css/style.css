@@ -944,6 +944,18 @@ input[type=number]::-webkit-outer-spin-button {
   .newsLetter__input::placeholder {
     font-size: 13px;
   }
+
+  .products__sort, .filter-fullScreen {
+    max-width: 120px;
+  }
+  .products__items {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-fullScreen {
+    max-width: unset;
+    margin-right: 12px;
+  }
 }
 @media screen and (max-width: 325px) {
   .viewMore {
