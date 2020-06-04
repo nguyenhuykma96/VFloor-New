@@ -1,0 +1,131 @@
+.overview {
+  @include flex(flex, row, center, stretch);
+  padding: 36px 0;
+  &__img {
+    max-width: 60%;
+    width: 100%;
+    margin-right: 40px;
+    @include flex(flex, row, center, stretch);
+
+    &-active {
+      @include size(548px);
+    }
+    &-sub {
+      @include flex(flex, column, space-between, center);
+      margin-right: 18px;
+      img {
+        @include size(100px);
+      }
+    }
+  }
+  &__info {
+    @include flex(flex, column, flex-start, flex-start);
+
+    &-title {
+      @include font(30px, 35px);
+      font-weight: normal;
+      color: #525252;
+      text-transform: uppercase;
+    }
+    &-des {
+      font-size: 14px;
+      text-align: justify;
+    }
+    &-price {
+      @extend .overview__info-title;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 20px;
+    }
+    &-long {
+      @include flex(flex, row, center, stretch);
+      height: 35px;
+      width: 100%;
+      max-width: 248px;
+      margin-bottom: 27px;
+    }
+  }
+}
+.icon-right {
+  @include size(40px, 35px);
+  padding: 8px 12px;
+  background-color: $color-black;
+  border-radius: 2px;
+  transition: transform 0.25s linear;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.25s linear;
+  }
+}
+.input {
+  flex: 1;
+  background-color: $color-white;
+  border: 1px solid $color-grey;
+  border-radius: 2px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  &::placeholder {
+    @include font(12px, 14px);
+    font-weight: 300;
+    color: $color-grey;
+    text-align: center;
+  }
+}
+.add-to-cart {
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-black;
+  height: 40px;
+  width: 100%;
+  max-width: 248px;
+  border: unset;
+}
+.select-color {
+  @include flex(flex, row, flex-start, center);
+  margin: 30px 0;
+}
+.select-item {
+  margin-right: 28px;
+  transition: background-color 0.25s linear;
+
+  img {
+    border-radius: 2px;
+    @include size(26px);
+  }
+  &:hover {
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    @include size(34px);
+    @include flex-center();
+    transition: background-color 0.25s linear;
+  }
+}
+.product-related {
+  grid-template-columns: repeat(4, 1fr);
+}
+.product-detail {
+  margin-bottom: 100px;
+  &-text {
+    @include flex(flex, row, space-between, center);
+  }
+}
+.detail-item {
+  &-title {
+    display: flex;
+    align-items: center;
+    h5 {
+      @include font(16px, 24px);
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  &-content {
+    li {
+      @include font(16px, 30px);
+      font-weight: 300;
+    }
+  }
+}
+.custom-title {
+  padding-bottom: 56px;
+}

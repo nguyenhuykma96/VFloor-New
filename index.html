@@ -27,28 +27,88 @@
     <header>
       <div class="header">
         <div class="top-header">
-          <div class="container">
-            <div class="top-header__row">
-              <a class="top-header__link" href="#">Hệ Thống Phân Phối</a>
-              <a class="top-header__link" href="/login">Đăng Nhập</a>
-              <div class="top-header__link icon-cart">
-                <i class="fa fa-shopping-cart icon"></i>
-                <span class="cart-quantity">2</span>
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="top-header__row">
+                <a class="top-header__link" href="#">Hệ Thống Phân Phối</a>
+                <a class="top-header__link" href="/login">Đăng Nhập</a>
+                <div class="top-header__link icon-cart">
+                  <i class="fa fa-shopping-cart icon"></i>
+                  <span class="cart-quantity">2</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="main-header">
-          <div class="container">
-            <div class="main-header__wrap">
-              <div class="logo">
-                <a href="/"> <img src="./img/logo.png" alt=""/></a>
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="main-header__wrap">
+                <div class="logo">
+                  <a href="/"> <img src="./img/logo.png" alt=""/></a>
+                </div>
+                <ul class="main-header__menu">
+                  <li class="menu-item">
+                    <a href="/products" class="menu-link">Sản Phẩm</a>
+                    <ul class="sub-menu">
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Vfloor</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Vfloor Standard</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Lucky Floor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Về Havitech</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Công Nghệ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Dự Án</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Tin Tức</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Liên Hệ</a>
+                  </li>
+                </ul>
+                <div class="menu-action">
+                  <div class="search-input">
+                    <i class="fa fa-search icon" aria-hidden="true"></i>
+                  </div>
+                  <div class="top-header__link icon-cart d-lg-none">
+                    <i class="fa fa-shopping-cart icon"></i>
+                    <span class="cart-quantity">2</span>
+                  </div>
+                  <i
+                    class="fa fa-bars icon d-lg-none ml-4"
+                    aria-hidden="true"
+                  ></i>
+                </div>
               </div>
-              <ul class="main-header__menu">
-                <li class="menu-item">
-                  <a href="/products" class="menu-link">Sản Phẩm</a>
-                  <ul class="sub-menu">
+            </div>
+          </div>
+        </div>
+        <div class="container container-custom d-lg-none">
+          <div class="page-wrap">
+            <div class="menu-fullScreen">
+              <ul class="main-header__menu d-block">
+                <li class="menu-item px-0">
+                  <div class="hasSubMenu">
+                    <a href="#" data-toggle="dropdown" class="menu-link "
+                      >Sản Phẩm</a
+                    >
+                    <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
+                  </div>
+
+                  <ul class="sub-menu position-static">
                     <li class="sub-menu__item">
                       <a class="sub-menu__link" href="#">Vfloor</a>
                     </li>
@@ -60,81 +120,31 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Về Havitech</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Công Nghệ</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Dự Án</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Tin Tức</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item px-0">
                   <a href="#" class="menu-link">Liên Hệ</a>
                 </li>
               </ul>
-              <div class="menu-action">
-                <div class="search-input">
-                  <i class="fa fa-search icon" aria-hidden="true"></i>
-                </div>
-                <div class="top-header__link icon-cart d-lg-none">
-                  <i class="fa fa-shopping-cart icon"></i>
-                  <span class="cart-quantity">2</span>
-                </div>
-                <i
-                  class="fa fa-bars icon d-lg-none ml-4"
-                  aria-hidden="true"
-                ></i>
-              </div>
+              <ul class="menu-fullScreen__bot">
+                <li class="menu-bot-item">
+                  <a href="#"></a>Hệ Thống Phân Phối
+                </li>
+                <li class="menu-bot-item">
+                  <a class="" href="#"></a>Đăng Nhập
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="container d-lg-none">
-          <div class="menu-fullScreen">
-            <ul class="main-header__menu d-block">
-              <li class="menu-item px-0">
-                <div class="hasSubMenu">
-                  <a href="#" data-toggle="dropdown" class="menu-link "
-                    >Sản Phẩm</a
-                  >
-                  <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
-                </div>
-
-                <ul class="sub-menu position-static">
-                  <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">Vfloor</a>
-                  </li>
-                  <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">Vfloor Standard</a>
-                  </li>
-                  <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">Lucky Floor</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Về Havitech</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Công Nghệ</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Dự Án</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Tin Tức</a>
-              </li>
-              <li class="menu-item px-0">
-                <a href="#" class="menu-link">Liên Hệ</a>
-              </li>
-            </ul>
-            <ul class="menu-fullScreen__bot">
-              <li class="menu-bot-item"><a href="#"></a>Hệ Thống Phân Phối</li>
-              <li class="menu-bot-item"><a class="" href="#"></a>Đăng Nhập</li>
-            </ul>
           </div>
         </div>
       </div>

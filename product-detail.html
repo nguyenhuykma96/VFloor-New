@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vfloor Product Detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <!--------- CSS ---------->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="top-header">
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="top-header__row">
+                <a class="top-header__link" href="#">Hệ Thống Phân Phối</a>
+                <a class="top-header__link" href="/login">Đăng Nhập</a>
+                <div class="top-header__link icon-cart">
+                  <i class="fa fa-shopping-cart icon"></i>
+                  <span class="cart-quantity">2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-header">
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="main-header__wrap">
+                <div class="logo">
+                  <a href="/"> <img src="./img/logo.png" alt=""/></a>
+                </div>
+                <ul class="main-header__menu">
+                  <li class="menu-item">
+                    <a href="/products" class="menu-link">Sản Phẩm</a>
+                    <ul class="sub-menu">
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Vfloor</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Vfloor Standard</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="#">Lucky Floor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Về Havitech</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Công Nghệ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Dự Án</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Tin Tức</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Liên Hệ</a>
+                  </li>
+                </ul>
+                <div class="menu-action">
+                  <div class="search-input">
+                    <i class="fa fa-search icon" aria-hidden="true"></i>
+                  </div>
+                  <div class="top-header__link icon-cart d-lg-none">
+                    <i class="fa fa-shopping-cart icon"></i>
+                    <span class="cart-quantity">2</span>
+                  </div>
+                  <i
+                    class="fa fa-bars icon d-lg-none ml-4"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-custom d-lg-none">
+          <div class="page-wrap">
+            <div class="menu-fullScreen">
+              <ul class="main-header__menu d-block">
+                <li class="menu-item px-0">
+                  <div class="hasSubMenu">
+                    <a href="#" data-toggle="dropdown" class="menu-link "
+                      >Sản Phẩm</a
+                    >
+                    <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
+                  </div>
+
+                  <ul class="sub-menu position-static">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Vfloor</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Vfloor Standard</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Lucky Floor</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item px-0">
+                  <a href="#" class="menu-link">Về Havitech</a>
+                </li>
+                <li class="menu-item px-0">
+                  <a href="#" class="menu-link">Công Nghệ</a>
+                </li>
+                <li class="menu-item px-0">
+                  <a href="#" class="menu-link">Dự Án</a>
+                </li>
+                <li class="menu-item px-0">
+                  <a href="#" class="menu-link">Tin Tức</a>
+                </li>
+                <li class="menu-item px-0">
+                  <a href="#" class="menu-link">Liên Hệ</a>
+                </li>
+              </ul>
+              <ul class="menu-fullScreen__bot">
+                <li class="menu-bot-item">
+                  <a href="#"></a>Hệ Thống Phân Phối
+                </li>
+                <li class="menu-bot-item">
+                  <a class="" href="#"></a>Đăng Nhập
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="breadcrumd">
+        <div class="breadcrumd">
+          <div class="container container-custom">
+            <div class="page-wrap">
+              <div class="breadcrumd__main">
+                <a href="#" class="breadcrumd__link">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  Trang chủ
+                </a>
+                <span>|</span>
+                <a href="#" class="breadcrumd__link">
+                  Sản Phẩm
+                </a>
+                <span>|</span>
+                <a href="#" class="breadcrumd__link">
+                  SÀN SPC VFLOOR
+                </a>
+                <span>|</span>
+                <a href="#" class="breadcrumd__link">
+                  Pro Vfloor Spring #2424
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="overview">
+        <div class="container container-custom">
+          <div class="page-wrap">
+            <div class="overview">
+              <div class="overview__img">
+                <div class="overview__img-sub">
+                  <a href="#">
+                    <img src="./img/product-detail-sub.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/product-detail-sub.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/product-detail-sub.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/product-detail-sub.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/product-detail-sub.png" alt="" />
+                  </a>
+                </div>
+                <div class="overview__img-active">
+                  <img src="./img/prodcut-detail-active.png" alt="" />
+                </div>
+              </div>
+              <div class="overview__info">
+                <h2 class="overview__info-title">Pro Vfloor Spring #2424</h2>
+                <p class="overview__info-des content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti dolores inventore et laboriosam minus, debitis non
+                  praesentium aperiam. Quis, nesciunt debitis quo quibusdam
+                  aperiam minima deleniti porro delectus distinctio laudantium?
+                </p>
+
+                <div class="select-color">
+                  <span class="select-item">
+                    <img src="./img/select-color.png" alt="" />
+                  </span>
+                  <span class="select-item">
+                    <img src="./img/select-color-2.png" alt="" />
+                  </span>
+                  <span class="select-item">
+                    <img src="./img/select-color-3.png" alt="" />
+                  </span>
+                  <span class="select-item">
+                    <img src="./img/select-color-4.png" alt="" />
+                  </span>
+                </div>
+
+                <span class="overview__info-price">$80,97</span>
+                <div class="overview__info-long">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Nhập Kích Thước Sàn"
+                  />
+                  <img src="./img/right.png" class="icon-right" alt="" />
+                </div>
+                <button type="button" class="add-to-cart">
+                  Add To cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container container-custom">
+          <div class="page-wrap">
+            <div class="product-detail">
+              <h2 class="title-section-txt custom-title">
+                THÔNG TIN KỸ THUẬT
+              </h2>
+              <div class="product-detail-text">
+                <div class="detail-item">
+                  <div class="detail-item-title">
+                    <span class="bullet"></span>
+                    <h5>Sức khỏe con người</h5>
+                  </div>
+                  <ul class="detail-item-content">
+                    <li>Thân thiện môi trường</li>
+                    <li>Không hóa chất gây hạ</li>
+                    <li>Dễ lau chùi</li>
+                    <li>Kháng khuẩn, nấm mốc</li>
+                    <li>An toàn cho sức khỏe</li>
+                  </ul>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-item-title">
+                    <span class="bullet"></span>
+                    <h5>Đặc tính kỹ thuật</h5>
+                  </div>
+                  <ul class="detail-item-content">
+                    <li>Thân thiện môi trường</li>
+                    <li>Không hóa chất gây hạ</li>
+                    <li>Dễ lau chùi</li>
+                    <li>Kháng khuẩn, nấm mốc</li>
+                    <li>An toàn cho sức khỏe</li>
+                  </ul>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-item-title">
+                    <span class="bullet"></span>
+                    <h5>Đặc tính kỹ thuật</h5>
+                  </div>
+                  <ul class="detail-item-content">
+                    <li>Thân thiện môi trường</li>
+                    <li>Không hóa chất gây hạ</li>
+                    <li>Dễ lau chùi</li>
+                    <li>Kháng khuẩn, nấm mốc</li>
+                    <li>An toàn cho sức khỏe</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container container-custom">
+          <div class="page-wrap">
+            <div class="">
+              <h2 class="title-section-txt  custom-title">
+                SẢN PHẨM LIÊN QUAN
+              </h2>
+              <div class="products__items product-related">
+                <div class="products__item">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input mt-0 ml-4"
+                      type="checkbox"
+                      value=""
+                      id="product1"
+                    />
+                    <label class="form-check-label" for="product1">
+                      So Sánh
+                    </label>
+                  </div>
+                  <div class="products__item-img">
+                    <img src="./img/product.png" alt="" />
+                  </div>
+                  <div class="products__item-des">
+                    <h3 class="products__item-title mb-3">
+                      Pro Vfloor Spring #2424
+                    </h3>
+                    <span class="products__item-price">$80,97</span>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input mt-0 ml-4"
+                      type="checkbox"
+                      value=""
+                      id="product1"
+                    />
+                    <label class="form-check-label" for="product1">
+                      So Sánh
+                    </label>
+                  </div>
+                  <div class="products__item-img">
+                    <img src="./img/product.png" alt="" />
+                  </div>
+                  <div class="products__item-des">
+                    <h3 class="products__item-title mb-3">
+                      Pro Vfloor Spring #2424
+                    </h3>
+                    <span class="products__item-price">$80,97</span>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input mt-0 ml-4"
+                      type="checkbox"
+                      value=""
+                      id="product1"
+                    />
+                    <label class="form-check-label" for="product1">
+                      So Sánh
+                    </label>
+                  </div>
+                  <div class="products__item-img">
+                    <img src="./img/product.png" alt="" />
+                  </div>
+                  <div class="products__item-des">
+                    <h3 class="products__item-title mb-3">
+                      Pro Vfloor Spring #2424
+                    </h3>
+                    <span class="products__item-price">$80,97</span>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input mt-0 ml-4"
+                      type="checkbox"
+                      value=""
+                      id="product1"
+                    />
+                    <label class="form-check-label" for="product1">
+                      So Sánh
+                    </label>
+                  </div>
+                  <div class="products__item-img">
+                    <img src="./img/product.png" alt="" />
+                  </div>
+                  <div class="products__item-des">
+                    <h3 class="products__item-title mb-3">
+                      Pro Vfloor Spring #2424
+                    </h3>
+                    <span class="products__item-price">$80,97</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="line"></section>
+      <section>
+        <div class="container">
+          <div class="newsLetter">
+            <div class="newsLetter__form">
+              <h2 class="newsLetter__title">ĐĂNG KÝ NEWSLETTER</h2>
+              <input
+                type="text"
+                class="newsLetter__input"
+                placeholder="Nhập địa chỉ e-mail của bạn tại đây"
+              />
+              <button type="submit" class="newsLetter__btn">Đăng Ký</button>
+            </div>
+            <div class="policy">
+              <a href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+              <span>|</span>
+              <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-8 col-sm-8 col-12">
+            <img src="./img/logo-white.png" alt="" />
+            <div class="footer__info">
+              <h5 class="company__name mb-4">
+                Công Ty Cổ phần Sản xuất Havitech
+              </h5>
+              <div class="footer__flex footer__info-address mb-2">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <h5>
+                  Tầng 2, Tòa nhà Vinaconex 7, 61 đường K2, Phường Cầu Diễn,
+                  Quận Nam Từ Liêm, Hà Nội
+                </h5>
+              </div>
+              <div class="footer__flex footer__info-address mb-2">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h5>Hotline 1: 0912.888.112 (Mr Tú)</h5>
+              </div>
+              <div class="footer__flex footer__info-address mb-2">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h5>Hotline 2: 0399.799.888</h5>
+              </div>
+              <div class="footer__flex footer__info-address">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <h5>Email: Havitech.jsc@gmail.com</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-8 col-12">
+            <div class="footer__social">
+              <h4 class="">Follow us</h4>
+              <div class="footer__social-icon">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </div>
+              <h4>Sign Up To Newsletter</h4>
+            </div>
+            <div class="footer__form">
+              <input type="text" placeholder="Enter your email" />
+              <button>Subcribe</button>
+            </div>
+            <iframe
+              class="footer__map w-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.970298873882!2d105.75762525126513!3d21.03387438592696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454be0c21e133%3A0x1ee532717853b099!2zVG_DoCBuaMOgIFZJTkFDT05FWCA3!5e0!3m2!1svi!2s!4v1585417631526!5m2!1svi!2s"
+              width="300"
+              height="200"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
