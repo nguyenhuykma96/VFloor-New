@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500;900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
@@ -50,7 +55,7 @@
                 </div>
                 <ul class="main-header__menu">
                   <li class="menu-item">
-                    <a href="/products" class="menu-link">Sản Phẩm</a>
+                    <a href="/products.html" class="menu-link">Sản Phẩm</a>
                     <ul class="sub-menu">
                       <li class="sub-menu__item">
                         <a class="sub-menu__link" href="#">Vfloor</a>
@@ -155,28 +160,54 @@
         <div class="breadcrumd">
           <div class="container container-custom">
             <div class="page-wrap">
-              <div class="breadcrumd__main">
-                <a href="#" class="breadcrumd__link">
-                  <i class="fa fa-home" aria-hidden="true"></i>
-                  Trang chủ
-                </a>
-                <span>|</span>
-                <a href="#" class="breadcrumd__link">
-                  Sản Phẩm
-                </a>
-                <span>|</span>
-                <a href="#" class="breadcrumd__link">
-                  SÀN SPC VFLOOR
-                </a>
-                <span>|</span>
-                <a href="#" class="breadcrumd__link">
-                  Pro Vfloor Spring #2424
-                </a>
+              <div class="breadcrumd__wrap">
+                <div class="breadcrumd__main">
+                  <a href="#" class="breadcrumd__link">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Trang chủ
+                  </a>
+                  <span>|</span>
+                  <a href="#" class="breadcrumd__link">
+                    Sản Phẩm
+                  </a>
+                  <span>|</span>
+                  <a href="#" class="breadcrumd__link">
+                    SÀN SPC VFLOOR
+                  </a>
+                  <span>|</span>
+                  <a href="#" class="breadcrumd__link">
+                    Pro Vfloor Spring #2424
+                  </a>
+                </div>
+                <ul class="summary">
+                  <li class="summary__item">
+                    <a href="#overview">Tổng quan</a>
+                  </li>
+                  <li class="summary__item">
+                    <a href="#product-slider" class="summary__link">Hình ảnh</a>
+                  </li>
+                  <li class="summary__item">
+                    <a href="#product-detail" class="summary__link"
+                      >Thông tin kỹ thuật</a
+                    >
+                  </li>
+                  <li class="summary__item">
+                    <a href="#product-related" class="summary__link"
+                      >Sản phẩm liên quan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-fullScreen d-lg-none my-4">
+                <h6 class="sort-txt">BỘ LỌC</h6>
+                <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section id="overview">
         <div class="container container-custom">
           <div class="page-wrap">
@@ -210,6 +241,11 @@
                   Corrupti dolores inventore et laboriosam minus, debitis non
                   praesentium aperiam. Quis, nesciunt debitis quo quibusdam
                   aperiam minima deleniti porro delectus distinctio laudantium?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis, velit alias magnam omnis molestias maxime tempore
+                  exercitationem tempora accusamus repudiandae mollitia
+                  doloribus? Laudantium, quo rem? Non consectetur cum aliquid
+                  corrupti?
                 </p>
 
                 <div class="select-color">
@@ -244,8 +280,42 @@
           </div>
         </div>
       </section>
+      <section id="product-slider">
+        <div class="product-slider">
+          <div class="product-slider__container">
+            <div class="slider__item">
+              <img src="./img/prodcut-detail-active.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/prodcut-detail-active.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/prodcut-detail-active.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/prodcut-detail-active.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/prodcut-detail-active.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/prodcut-detail-active.png" alt="" />
+            </div>
+          </div>
+          <div class="pagination current-img">
+            <div class="pagination__action">
+              <img src="./img/prev-page.png" alt="" class="prev-img" />
+              <span class="current-page">01</span>
+              <img src="./img/next-page.png" alt="" class="next-img" />
+            </div>
+            <div class="total-page mt-2">
+              <span>1</span><span>/</span><span>10</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section>
+      <section id="product-detail">
         <div class="container container-custom">
           <div class="page-wrap">
             <div class="product-detail">
@@ -298,7 +368,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="product-related">
         <div class="container container-custom">
           <div class="page-wrap">
             <div class="">
@@ -421,6 +491,36 @@
           </div>
         </div>
       </section>
+
+      <div class="fullScreen-form">
+        <div class="container container-custom">
+          <div class="page-wrap">
+            <i class="fa fa-times icon icon-close py-5" aria-hidden="true"></i>
+            <ul class="summary-fullScreen">
+              <li class="summary-fullScreen__item">
+                <a href="#overview" class="summary-fullScreen__link"
+                  >Tổng quan</a
+                >
+              </li>
+              <li class="summary-fullScreen__item">
+                <a href="#product-slider" class="summary-fullScreen__link"
+                  >Hình ảnh</a
+                >
+              </li>
+              <li class="summary-fullScreen__item">
+                <a href="#product-detail" class="summary-fullScreen__link"
+                  >Thông tin kỹ thuật</a
+                >
+              </li>
+              <li class="summary-fullScreen__item">
+                <a href="#product-related" class="summary-fullScreen__link"
+                  >Sản phẩm liên quan</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="footer" class="d-flex">
       <div class="container">
@@ -489,6 +589,7 @@
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>

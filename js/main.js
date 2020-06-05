@@ -22,6 +22,7 @@ $(document).ready(function() {
   $(".filter-fullScreen .icon").on("click", function() {
     $(".fullScreen-form").addClass("show");
   });
+
   $(".icon-close").on("click", function() {
     $(".fullScreen-form").removeClass("show");
   });
@@ -33,6 +34,7 @@ $(document).ready(function() {
     items: 1,
     navText: ["<img src='./img/prev.png'>", "<img src='./img/next.png'>"]
   });
+
   $(".construction__content").owlCarousel({
     loop: true,
     margin: 20,
@@ -49,5 +51,48 @@ $(document).ready(function() {
         nav: false
       }
     }
+  });
+
+  $(".product-slider__container").slick({
+    centerMode: true,
+    centerPadding: "0px",
+    slidesToShow: 3,
+    prevArrow: false,
+    nextArrow: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  $(".prev-img").click(function() {
+    $(".product-slider__container").slick("slickPrev");
+  });
+
+  $(".next-img").click(function() {
+    $(".product-slider__container").slick("slickNext");
+  });
+
+  $("a.summary__link").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate(
+      { scrollTop: $($(this).attr("href")).offset().top },
+      750
+    );
+  });
+
+  $(".summary-fullScreen__link").click(function() {
+    $(".icon-close").trigger("click");
+    $("html, body").animate(
+      { scrollTop: $($(this).attr("href")).offset().top },
+      750
+    );
   });
 });
