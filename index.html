@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500;900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
@@ -50,7 +55,7 @@
                 </div>
                 <ul class="main-header__menu">
                   <li class="menu-item">
-                    <a href="/products" class="menu-link">Sản Phẩm</a>
+                    <a href="/products.html" class="menu-link">Sản Phẩm</a>
                     <ul class="sub-menu">
                       <li class="sub-menu__item">
                         <a class="sub-menu__link" href="#">Vfloor</a>
@@ -88,7 +93,11 @@
                     <span class="cart-quantity">2</span>
                   </div>
                   <i
-                    class="fa fa-bars icon d-lg-none ml-4"
+                    class="fa fa-bars icon icon-menu d-lg-none ml-4"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="fa fa-times icon icon-close-home ml-4"
                     aria-hidden="true"
                   ></i>
                 </div>
@@ -526,27 +535,29 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-8 col-sm-8 col-12">
-            <img src="./img/logo-white.png" alt="" />
+            <div class="footer__logo">
+              <img src="./img/logo-white.png" alt="" />
+            </div>
             <div class="footer__info">
               <h5 class="company__name mb-4">
                 Công Ty Cổ phần Sản xuất Havitech
               </h5>
               <div class="footer__flex footer__info-address mb-2">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <i class="fa fa-map-marker icon" aria-hidden="true"></i>
                 <h5>
                   Tầng 2, Tòa nhà Vinaconex 7, 61 đường K2, Phường Cầu Diễn,
                   Quận Nam Từ Liêm, Hà Nội
                 </h5>
               </div>
               <div class="footer__flex footer__info-address mb-2">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+                <i class="fa fa-phone icon" aria-hidden="true"></i>
                 <h5>Hotline 1: 0912.888.112 (Mr Tú)</h5>
               </div>
               <div class="footer__flex footer__info-address mb-2">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+                <i class="fa fa-phone icon" aria-hidden="true"></i>
                 <h5>Hotline 2: 0399.799.888</h5>
               </div>
-              <div class="footer__flex footer__info-address">
+              <div class="footer__flex footer__info-address icon">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 <h5>Email: Havitech.jsc@gmail.com</h5>
               </div>
@@ -556,11 +567,11 @@
             <div class="footer__social">
               <h4 class="">Follow us</h4>
               <div class="footer__social-icon">
-                <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play icon" aria-hidden="true"></i>
+                <i class="fa fa-facebook icon" aria-hidden="true"></i>
+                <i class="fa fa-twitter icon" aria-hidden="true"></i>
+                <i class="fa fa-instagram icon" aria-hidden="true"></i>
+                <i class="fa fa-google-plus icon" aria-hidden="true"></i>
               </div>
               <h4>Sign Up To Newsletter</h4>
             </div>
@@ -589,6 +600,7 @@
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>

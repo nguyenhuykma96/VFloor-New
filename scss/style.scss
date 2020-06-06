@@ -19,6 +19,9 @@ img {
   display: block;
   width: 100%;
 }
+.icon-close-home {
+  display: none;
+}
 .show {
   opacity: 1 !important;
   visibility: visible !important;
@@ -87,11 +90,8 @@ img {
     @include font(16px, 19px);
   }
 }
-// .noHover {
-//   pointer-events: none;
-// }
 .top-header {
-  border-bottom: 3px solid $color-main-1;
+  border-bottom: 3px solid $color-main-2;
   &__row {
     @include flex(flex, row, flex-end, center);
   }
@@ -106,7 +106,7 @@ img {
   height: 100vh;
   .menu-item {
     padding-bottom: 34px;
-    &:last-child {
+    menu-item &:last-child {
       border-bottom: 1px solid $color-border;
     }
   }
@@ -118,7 +118,6 @@ img {
 }
 .main-header {
   padding: 28px 0;
-  border-bottom: 1px solid $color-border;
   position: relative;
 
   &__wrap {
@@ -126,7 +125,6 @@ img {
   }
   &__menu {
     @include flex(flex, row, space-between, center);
-
     .menu-link {
       font-size: 1.6rem;
       text-transform: uppercase;
@@ -142,21 +140,30 @@ img {
   position: relative;
   &:hover {
     .sub-menu {
-      display: block;
       opacity: 1;
-      transition: opacity 0.3s;
+      transition: opacity 0.25s linear;
+      visibility: visible;
+      display: block;
     }
   }
 }
 .sub-menu {
   position: absolute;
-  top: 28px;
+  top: 110%;
   left: 0;
   width: 150px;
+  z-index: 99;
+  visibility: hidden;
   opacity: 0;
   display: none;
+  background-color: $color-white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   &__item {
     padding: 8px 28px;
+    &:hover {
+      background-color: $color-bg;
+      transition: background-color 0.25s linear;
+    }
   }
   &__link {
     @include font(13px, 15px);
@@ -192,7 +199,7 @@ img {
   .owl-nav {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     margin-top: 0;
     @include flex(flex, row, space-between, center);
@@ -420,6 +427,10 @@ img {
   position: relative;
   min-height: 660px;
 }
+
+.footer__logo {
+  max-width: 60%;
+}
 .footer__info {
   color: $color-white;
   margin-top: 36px;
@@ -430,12 +441,12 @@ img {
   }
   .company__name {
     text-transform: uppercase;
+    line-height: 24px;
   }
 }
 .footer__flex {
-  @include flex(flex, row, flex-start, center);
+  @include flex(flex, row, flex-start, flex-start);
   i {
-    font-size: 30px;
     margin-right: 20px;
   }
   h5 {
@@ -452,9 +463,9 @@ img {
     margin-bottom: 10px;
     i {
       color: $color-main-2;
-      font-size: 30px;
+      // font-size: 30px;
       margin-right: 20px;
-      cursor: pointer;
+      // cursor: pointer;
     }
   }
 }

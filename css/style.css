@@ -35,6 +35,10 @@ img {
   width: 100%;
 }
 
+.icon-close-home {
+  display: none;
+}
+
 .show {
   opacity: 1 !important;
   visibility: visible !important;
@@ -127,7 +131,7 @@ img {
 }
 
 .top-header {
-  border-bottom: 3px solid #0a7634;
+  border-bottom: 3px solid #27ae60;
 }
 .top-header__row {
   display: flex;
@@ -148,7 +152,7 @@ img {
 .menu-fullScreen .menu-item {
   padding-bottom: 34px;
 }
-.menu-fullScreen .menu-item:last-child {
+menu-item .menu-fullScreen .menu-item:last-child {
   border-bottom: 1px solid #e0e0e0;
 }
 .menu-fullScreen__bot .menu-bot-item {
@@ -157,7 +161,6 @@ img {
 
 .main-header {
   padding: 28px 0;
-  border-bottom: 1px solid #e0e0e0;
   position: relative;
 }
 .main-header__wrap {
@@ -190,21 +193,30 @@ img {
   position: relative;
 }
 .menu-item:hover .sub-menu {
-  display: block;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.25s linear;
+  visibility: visible;
+  display: block;
 }
 
 .sub-menu {
   position: absolute;
-  top: 28px;
+  top: 110%;
   left: 0;
   width: 150px;
+  z-index: 99;
+  visibility: hidden;
   opacity: 0;
   display: none;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .sub-menu__item {
   padding: 8px 28px;
+}
+.sub-menu__item:hover {
+  background-color: #f8f8f8;
+  transition: background-color 0.25s linear;
 }
 .sub-menu__link {
   font-size: 13px;
@@ -247,7 +259,7 @@ img {
 .banner .owl-nav {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   margin-top: 0;
   display: flex;
@@ -480,6 +492,10 @@ img {
   min-height: 660px;
 }
 
+.footer__logo {
+  max-width: 60%;
+}
+
 .footer__info {
   color: #ffffff;
   margin-top: 36px;
@@ -489,16 +505,16 @@ img {
 }
 .footer__info .company__name {
   text-transform: uppercase;
+  line-height: 24px;
 }
 
 .footer__flex {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 .footer__flex i {
-  font-size: 30px;
   margin-right: 20px;
 }
 .footer__flex h5 {
@@ -517,9 +533,7 @@ img {
 }
 .footer__social-icon i {
   color: #27ae60;
-  font-size: 30px;
   margin-right: 20px;
-  cursor: pointer;
 }
 
 .footer__form {
@@ -815,9 +829,13 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   margin-right: 18px;
 }
-.overview__img-sub img {
+.overview__img-sub a {
   width: 100px;
   height: 100px;
+  box-sizing: border-box;
+}
+.overview__img-sub a:hover {
+  border: 2px solid #0a7634;
 }
 .overview__info {
   display: flex;
@@ -889,6 +907,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   max-width: 248px;
   border: unset;
+  cursor: pointer;
 }
 
 .select-color {
@@ -900,23 +919,20 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .select-item {
-  margin-right: 28px;
   transition: background-color 0.25s linear;
+  padding: 4px;
+  margin-right: 20px;
 }
 .select-item img {
   border-radius: 2px;
-  width: 26px;
-  height: 26px;
 }
 .select-item:hover {
-  background-color: #f2f2f2;
-  border-radius: 2px;
-  width: 34px;
-  height: 34px;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 2px;
   transition: background-color 0.25s linear;
 }
 
@@ -1031,7 +1047,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 374px;
     height: 374px;
   }
-  .overview__img-sub img {
+  .overview__img-sub a {
     width: 68px;
     height: 68px;
   }
@@ -1062,6 +1078,16 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .main-header__menu {
     display: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .menu-item:hover .sub-menu {
+    display: none;
+  }
+
+  .sub-menu {
+    display: none;
+    box-shadow: unset;
   }
 
   .banner .owl-stage-outer {
@@ -1124,10 +1150,6 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: row;
     margin-right: unset;
     margin-top: 10px;
-  }
-  .overview__img-sub img {
-    width: 65px;
-    height: 65px;
   }
 
   .summary-fullScreen__item {
@@ -1257,6 +1279,18 @@ input[type=number]::-webkit-outer-spin-button {
   .filter-fullScreen {
     max-width: unset;
     margin-right: 12px;
+  }
+
+  .footer__logo {
+    padding-top: 20px;
+  }
+
+  .footer__info {
+    padding-bottom: 50px;
+  }
+
+  .footer__form button {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 325px) {

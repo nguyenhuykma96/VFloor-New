@@ -2,7 +2,15 @@ $(document).ready(function() {
   $(".menu-action i").on("click", function() {
     const menu = $(".menu-fullScreen");
     menu.toggleClass("show-menu");
-    menu.hasClass("show-menu") ? menu.slideDown(300) : menu.slideUp(300);
+    if (menu.hasClass("show-menu")) {
+      menu.slideDown(300);
+      $(".icon-menu").css({ display: "none" });
+      $(".icon-close-home").css({ display: "block" });
+    } else {
+      menu.slideUp(300);
+      $(".icon-menu").css({ display: "block" });
+      $(".icon-close-home").css({ display: "none" });
+    }
   });
 
   $(".hasSubMenu .icon").on("click", function() {

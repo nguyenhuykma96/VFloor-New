@@ -41,7 +41,7 @@
         @include size(374px);
       }
       &-sub {
-        img {
+        a {
           @include size(68px);
         }
       }
@@ -68,14 +68,19 @@
     }
     &__menu {
       display: none;
+      border-bottom: 1px solid $color-border;
     }
   }
   .menu-item {
     &:hover {
       .sub-menu {
-        // display: none;
+        display: none;
       }
     }
+  }
+  .sub-menu {
+    display: none;
+    box-shadow: unset;
   }
   .banner {
     .owl-stage-outer {
@@ -137,17 +142,11 @@
       margin-right: 20px;
       &-active {
         max-width: 354px;
-        img {
-          // height: 100%;
-        }
       }
       &-sub {
         flex-direction: row;
         margin-right: unset;
         margin-top: 10px;
-        img {
-          @include size(65px);
-        }
       }
     }
   }
@@ -287,6 +286,17 @@
   .filter-fullScreen {
     max-width: unset;
     margin-right: 12px;
+  }
+  .footer__logo {
+    padding-top: 20px;
+  }
+  .footer__info {
+    padding-bottom: 50px;
+  }
+  .footer__form {
+    button {
+      padding: 10px;
+    }
   }
 }
 
